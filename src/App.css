@@ -14,11 +14,13 @@
 	border-bottom: 1px solid white;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .header > p:first-child{
     font-size: 20px;
     margin-top: 3px;
+    
 }
 
 .headerBottom{
