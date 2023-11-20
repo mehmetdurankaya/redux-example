@@ -1,0 +1,160 @@
+.container {
+	width: 980px;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	background-color: #237BA0;
+	color: white;
+	width: 100%;
+	height: 160px;
+	text-align: center;
+	border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header > p:first-child{
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.headerBottom{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerBottom > div:first-child >p{
+    text-align: left;
+}
+
+.headerBottom > div:last-child >p{
+    text-align: right;
+    font-size: 25px;
+}
+
+.cardList {
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.gameEnd{
+    width: 100%;
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gameEnd > h1{
+    margin-top: 150px;
+    font-size: 70px;
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
+
+.vic{
+    color: 	#006847;
+}
+
+
+.lose{
+    color: #D21404;
+}
+
+.gameEnd > button {
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-top: 55px;
+    border: none;
+}
+
+.vicBut{
+    background-color: #006847;
+}
+
+.loseBut{
+    background-color: #D21404;
+}
+
+.cards {
+	margin-top: 5px;
+	margin-left: 18px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.75s;
+    cursor: pointer;
+}
+
+.clickEvent {
+	transform: rotateY(180deg);
+}
+
+.trueChoice {
+	transform: rotateY(180deg);
+}
+
+.front > img {
+	width: 140px;
+	height: 140px;
+}
+
+.front,
+.back {
+	backface-visibility: hidden;
+}
+
+.back {
+	border-radius: 5px;
+	width: 140px;
+	height: 140px;
+	background-color: #70C1B3;
+	color: white;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 26px;
+}
+
+.front {
+	transform: rotateY(180deg);
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.front > img {
+	border-radius: 5px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #237BA0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.footer > a{
+    color: white;
+    transition: all 1s;
+}
+
+.footer > a:hover{
+    color: black;
+}
